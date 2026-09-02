@@ -10,8 +10,7 @@ if (!titre || !description || !ville) {
 const { error } = await supabase
   .from("dons")
   .insert([
-    {
-      titre: titre,
+   {nom: titre,
       description: description,
       ville: ville,
     },
